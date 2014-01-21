@@ -1,0 +1,40 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+SRCVER=$(shell echo *.tar.gz | sed -r 's/.*_(.*).orig.tar.gz$$/\1/')
+DEB_TAR_SRCDIR := dahdi-tools-$(SRCVER)
+DEB_TARBALL := dahdi-tools_$(SRCVER).orig.tar.gz
+include /usr/share/cdbs/1/rules/tarball.mk
+include /usr/share/cdbs/1/rules/patchsys-quilt.mk
+DEB_PATCHDIRS = $(CURDIR)/patches
+include /usr/share/cdbs/1/class/autotools.mk
+
+
+DEB_DH_INSTALLINIT_ARGS = -- defaults 26 74
+
+configure/dahdi::
+	echo "MENUSELECT_UTILS=" > $(DEB_SRCDIR)/menuselect.makeopts
+	echo "MENUSELECT_BUILD_DEPS=" > $(DEB_SRCDIR)/menuselect.makeopts
+
+build/dahdi::
+	for app in patgen pattest patlooptest hdlcstress hdlctest hdlcgen hdlcverify timertest dahdi_maint; do \
+		$(MAKE) -C $(DEB_SRCDIR) $$app; \
+	done
+ 
+binary-install/dahdi::
+	cp $(DEB_SRCDIR)/init.conf.sample $(CURDIR)/debian/$(cdbs_curpkg)/etc/dahdi/init.conf
+	cp $(DEB_SRCDIR)/modules.sample $(CURDIR)/debian/$(cdbs_curpkg)/etc/dahdi/modules
+	cp $(DEB_SRCDIR)/blacklist.sample $(CURDIR)/debian/$(cdbs_curpkg)/etc/modprobe.d/dahdi.blacklist.conf
+	find $(CURDIR)/debian/$(cdbs_curpkg)/etc -type f -exec chmod a-x {} \;
+	#
+	cp $(DEB_SRCDIR)/dahdi.init $(CURDIR)/debian/$(cdbs_curpkg).dahdi.init
+	cp $(DEB_SRCDIR)/xpp/genconf_parameters $(CURDIR)/debian/$(cdbs_curpkg)/etc/dahdi/
+	for app in patgen pattest patlooptest hdlcstress hdlctest hdlcgen hdlcverify timertest dahdi_maint; do \
+		cp $(DEB_SRCDIR)/$$app $(CURDIR)/debian/$(cdbs_curpkg)/usr/sbin; \
+	done
+	dh_installinit --name=dahdi
+	dh_installdocs $(DEB_SRCDIR)/UPGRADE.txt
+	rm $(CURDIR)/debian/$(cdbs_curpkg).dahdi.init
+
+clean::
+	rm *.cdbs-config_list

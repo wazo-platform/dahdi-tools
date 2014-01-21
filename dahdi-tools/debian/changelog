@@ -1,0 +1,90 @@
+dahdi-tools (12:2.6.0+pf.xivo.1.2.2~20120213.155220.1ee0083-1) squeeze-xivo-skaro-dev; urgency=low
+
+  * New upstream release.
+
+ -- Etienne Lessard <elessard@avencall.com>  Mon, 13 Feb 2012 10:54:38 -0500
+
+dahdi-tools (12:2.5.0+pf.xivo.1.2~alpha-1.4-1) squeeze-xivo-skaro-dev; urgency=low
+
+  * fix version for packaging-farm
+
+ -- Nicolas HICHER (atarakt) <nhicher@proformatique.com>  Wed, 28 Sep 2011 14:22:59 -0400
+
+dahdi-tools (12:2.5.0+pf.xivo.1.2~20110808.142833.016adb9) squeeze-xivo-skaro-dev; urgency=low
+
+  * New upstream release.
+
+ -- Sylvain Boily <sboily@proformatique.com>  Tue, 09 Aug 2011 14:32:58 -0400
+
+dahdi-tools (12:2.4.1-2+pf.xivo.1.2~svn10441-10) squeeze-xivo-skaro-dev; urgency=low
+
+  * fix version 
+
+ -- Nicolas HICHER (atarakt) <nhicher@proformatique.com>  Tue, 26 Apr 2011 10:59:53 +0200
+
+dahdi-tools (12:2.4.1+pf.xivo.1.2~svn10440-3) squeeze-xivo-skaro-dev; urgency=low
+
+  * fix version 
+
+ -- Nicolas HICHER (atarakt) <nhicher@proformatique.com>  Tue, 29 Mar 2011 10:42:02 +0200
+
+dahdi-tools (12:2.4.1+pf.1.2.0~svn10311-0) squeeze-xivo-skaro-dev; urgency=low
+
+  * New upstream release
+  * fix changelog (remove +dfsg)
+
+ -- Nicolas HICHER (atarakt) <nhicher@proformatique.com>  Wed, 23 Mar 2011 14:19:37 +0100
+
+dahdi-tools (11:2.4.0+dfsg+pf.1.2.0~svn9137-0) lenny-xivo-skaro-dev; urgency=low
+
+  * New upstream release.
+
+ -- Sylvain Boily <sboily@proformatique.com>  Wed, 08 Sep 2010 16:55:29 -0400
+
+dahdi-tools (11:2.3.0+pf.1.1~svn8031-0) lenny-xivo-gallifrey-dev; urgency=low
+
+  * New upstream release.
+  * Updated patch 'zaptel_perl'.
+
+ -- Marc Dequènes (Duck) <mdequenes@proformatique.com>  Fri, 23 Apr 2010 16:05:56 +0200
+
+dahdi-tools (10:2.1.0.2+pf.0.4.3~svn5052-3) etch-xivo-k-9-dev; urgency=low
+
+  * Force epoch bump to ensure being higher than Tardis (because same
+    binary packages in older zaptel package causes upgrade problems and
+    Nono is not yet able to catch this case up).
+
+ -- Marc Dequènes (Duck) <mdequenes@proformatique.com>  Thu, 29 Jan 2009 19:16:14 +0100
+
+dahdi-tools (9:2.1.0.2+pf.0.4.3~svn5052-2) etch-xivo-k-9-dev; urgency=low
+
+  * Fixed silly mistake in 'postinst'.
+
+ -- Marc Dequènes (Duck) <mdequenes@proformatique.com>  Mon, 26 Jan 2009 17:36:21 +0100
+
+dahdi-tools (9:2.0.0+pf.0.4.3~svn5052-0) etch-xivo-k-9-dev; urgency=low
+
+  * Reorganized init startup order (coordinated with asterisk).
+
+ -- Marc Dequènes (Duck) <mdequenes@proformatique.com>  Mon, 26 Jan 2009 15:23:12 +0100
+
+dahdi-tools (9:2.0.0+pf.0.4~svn4418-1) etch-xivo-k-9-dev; urgency=low
+
+  * Bump epoch to ensure being superior to Tardis packages (due to Nono
+    limitations).
+
+ -- Marc Dequènes (Duck) <mdequenes@proformatique.com>  Wed, 22 Oct 2008 15:33:09 +0200
+
+dahdi-tools (8:2.0.0-2) etch-xivo-k-9-dev; urgency=low
+
+  * Added missing include directory in -dev package
+  * Added missing '/etc/dahdi/genconf_parameters' config file for
+    dahdi_genconf utility.
+
+ -- Marc Dequènes (Duck) <mdequenes@proformatique.com>  Wed, 22 Oct 2008 12:04:59 +0200
+
+dahdi-tools (8:2.0.0-1) etch-xivo-k-9-dev; urgency=low
+
+  * Initial release.
+
+ -- Marc Dequènes (Duck) <mdequenes@proformatique.com>  Mon, 20 Oct 2008 18:00:34 +0200

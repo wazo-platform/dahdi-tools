@@ -1,0 +1,76 @@
+This package was debianized by Marc Dequènes (Duck) <mdequenes@proformatique.com> 
+on Mon, 20 Oct 2008 11:49:55 +0200.
+
+It was downloaded from
+  http://www.asterisk.org/
+
+Upstream Authors:
+  Digium, Inc.
+  Asterisk Development Team <asteriskteam@digium.com>
+  Mark Spencer <markster@digium.com>
+  Matthew Fredrickson <creslin@digium.com>
+  Jim Dixon <jim@lambdatel.com>
+  Zapata Telephony
+  Michal Ostrowski <mostrows@styx.uwaterloo.ca>
+  Jamal Hadi Salim <hadi@cyberus.ca>
+  Tzafrir Cohen <tzafrir.cohen@xorcom.com>
+  Santiago Ruano Rinc\['o]n <santiago@unicauca.edu.co>
+  Xorcom Team <support@xorcom.com>
+  Oron Peled <oron@actcom.co.il>
+  Russell Bryant <russell@digium.com>
+  Kevin P. Fleming <kpfleming@digium.com>
+  Sean Bright <sean.bright@gmail.com>
+  Michael Sweet
+  Krzysztof Halasa <khc@pm.waw.pl>
+
+  Copyright 1999-2008
+
+    GPL-2
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+
+    LGPL 2.1
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+
+    Astistic License
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of either:
+
+    a) the GNU General Public License as published by the Free Software
+       Foundation; either version 1, or (at your option) any later
+       version, or
+
+    b) the "Artistic License" which comes with Perl.
+
+    On Debian GNU/Linux systems, the complete text of the GNU General
+    Public License can be found in `/usr/share/common-licenses/GPL' and
+    the Artistic Licence in `/usr/share/common-licenses/Artistic'.
+
