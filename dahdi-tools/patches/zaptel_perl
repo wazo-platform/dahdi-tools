@@ -5,11 +5,11 @@
 ## (sitelib in Debian is under /usr/local. We don't want to install
 ## there)
 
-Index: dahdi-tools-2.7.0/xpp/Makefile
+Index: dahdi-tools-2.9.0.1/xpp/Makefile
 ===================================================================
---- dahdi-tools-2.7.0.orig/xpp/Makefile
-+++ dahdi-tools-2.7.0/xpp/Makefile
-@@ -28,7 +28,7 @@ SBINDIR		= $(prefix)/sbin
+--- dahdi-tools-2.9.0.1.orig/xpp/Makefile	2014-02-06 11:23:45.756674486 -0500
++++ dahdi-tools-2.9.0.1/xpp/Makefile	2014-02-06 11:23:45.816677007 -0500
+@@ -30,7 +30,7 @@
  DATADIR		= $(datadir)/dahdi
  MANDIR		= $(mandir)/man8
  HOTPLUG_USB_DIR	= $(sysconfdir)/hotplug/usb
