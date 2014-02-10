@@ -22,6 +22,7 @@ build/dahdi::
 	done
  
 binary-install/dahdi::
+	rm -f $(DEB_SRCDIR)/init.conf.sample
 	cp $(DEB_SRCDIR)/init.conf.sample $(CURDIR)/debian/$(cdbs_curpkg)/etc/dahdi/init.conf
 	cp $(DEB_SRCDIR)/modules.sample $(CURDIR)/debian/$(cdbs_curpkg)/etc/dahdi/modules
 	cp $(DEB_SRCDIR)/blacklist.sample $(CURDIR)/debian/$(cdbs_curpkg)/etc/modprobe.d/dahdi.blacklist.conf
