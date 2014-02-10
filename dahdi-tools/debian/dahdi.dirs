@@ -1,2 +1,3 @@
 etc/dahdi/
 etc/modprobe.d/
+etc/udev/rules.d
