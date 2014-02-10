@@ -12,6 +12,9 @@ include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_DH_INSTALLINIT_ARGS = -- defaults 26 74
 
+patch/dahdi::
+	rm -f $(DEB_SRCDIR)/system.conf.sample
+
 configure/dahdi::
 	echo "MENUSELECT_UTILS=" > $(DEB_SRCDIR)/menuselect.makeopts
 	echo "MENUSELECT_BUILD_DEPS=" > $(DEB_SRCDIR)/menuselect.makeopts
