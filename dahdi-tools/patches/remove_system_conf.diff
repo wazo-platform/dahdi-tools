@@ -1,7 +1,7 @@
-Index: dahdi-tools-2.9.2/Makefile
+Index: dahdi-tools-2.10.0/Makefile
 ===================================================================
---- dahdi-tools-2.9.2.orig/Makefile
-+++ dahdi-tools-2.9.2/Makefile
+--- dahdi-tools-2.10.0.orig/Makefile
++++ dahdi-tools-2.10.0/Makefile
 @@ -240,7 +240,6 @@ ifneq (,$(BINS))
  endif
  ifeq (,$(wildcard $(DESTDIR)$(CONFIG_FILE)))
