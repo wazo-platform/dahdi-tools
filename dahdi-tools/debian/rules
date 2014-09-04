@@ -20,10 +20,9 @@ build/dahdi::
 	for app in patgen pattest patlooptest hdlcstress hdlctest hdlcgen hdlcverify timertest dahdi_maint; do \
 		$(MAKE) -C $(DEB_SRCDIR) $$app; \
 	done
- 
+
 binary-install/dahdi::
 	cp $(DEB_SRCDIR)/init.conf.sample $(CURDIR)/debian/$(cdbs_curpkg)/etc/dahdi/init.conf
-	cp $(DEB_SRCDIR)/modules.sample $(CURDIR)/debian/$(cdbs_curpkg)/etc/dahdi/modules
 	cp $(DEB_SRCDIR)/blacklist.sample $(CURDIR)/debian/$(cdbs_curpkg)/etc/modprobe.d/dahdi.blacklist.conf
 	find $(CURDIR)/debian/$(cdbs_curpkg)/etc -type f -exec chmod a-x {} \;
 	#
@@ -32,6 +31,7 @@ binary-install/dahdi::
 	for app in patgen pattest patlooptest hdlcstress hdlctest hdlcgen hdlcverify timertest dahdi_maint; do \
 		cp $(DEB_SRCDIR)/$$app $(CURDIR)/debian/$(cdbs_curpkg)/usr/sbin; \
 	done
+	cp $(DEB_SRCDIR)/modules.sample $(CURDIR)/debian/$(cdbs_curpkg)/usr/share/dahdi/
 	dh_installinit --name=dahdi
 	dh_installdocs $(DEB_SRCDIR)/UPGRADE.txt
 	rm $(CURDIR)/debian/$(cdbs_curpkg).dahdi.init
