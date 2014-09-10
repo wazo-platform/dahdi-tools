@@ -2,6 +2,9 @@
 
 case "$1" in
     configure)
+        dahdi_modules_backup_file="/etc/dahdi/modules.dpkg-backup"
+        dahdi_modules_remove_file="/etc/dahdi/modules.dpkg-remove"
+        dahdi_modules_conf_file="/etc/dahdi/modules"
         old_modprobe_dahdi_blacklist_file="/etc/modprobe.d/dahdi.blacklist"
         if [ -f $old_modprobe_dahdi_blacklist_file ]; then
             rm $old_modprobe_dahdi_blacklist_file
@@ -11,6 +14,12 @@ case "$1" in
 	    	update-rc.d -f dahdi-tools remove >/dev/null
 	    	# they are recreated later by dh_installinit code
 	    fi
+        if [ -f $dahdi_modules_backup_file ]; then
+            mv $dahdi_modules_backup_file $dahdi_modules_conf_file
+        fi
+        if [ -f $dahdi_modules_remove_file ]; then
+            cp $dahdi_modules_remove_file $dahdi_modules_conf_file
+        fi
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
