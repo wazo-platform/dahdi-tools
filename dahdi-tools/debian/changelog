@@ -1,3 +1,9 @@
+dahdi-tools (12:2.10.0+xivo.14.17~20140818.190130.4114cbb-wheezy-2) xivo-dev; urgency=low
+
+  * Move /etc/dahdi/modules as sample config file
+
+ -- Sebastien Duthil <sduthil@avencall.com>  Tue, 09 Sep 2014 16:30:34 -0400
+
 dahdi-tools (12:2.6.0+pf.xivo.1.2.2~20120213.155220.1ee0083-1) squeeze-xivo-skaro-dev; urgency=low
 
   * New upstream release.
