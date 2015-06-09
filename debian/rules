@@ -35,7 +35,7 @@ binary-install/dahdi::
 	rm $(CURDIR)/debian/$(cdbs_curpkg).dahdi.init
 
 clean::
-	rm *.cdbs-config_list
+	rm -f *.cdbs-config_list
 
 .PHONY: get-orig-source
 
