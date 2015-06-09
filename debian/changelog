@@ -1,3 +1,9 @@
+dahdi-tools (12:2.10.0+xivo.15.11~20150609.191609.1fe477a7-wheezy-1) xivo-dev; urgency=medium
+
+  * Refactor debian package
+
+ -- Sylvain Boily <sboily@avencall.com>  Tue, 09 Jun 2015 19:16:20 -0400
+
 dahdi-tools (12:2.10.0+xivo.14.17~20140818.190130.4114cbb-wheezy-2) xivo-dev; urgency=low
 
   * Move /etc/dahdi/modules as sample config file
