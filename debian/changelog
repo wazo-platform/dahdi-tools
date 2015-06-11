@@ -1,3 +1,9 @@
+dahdi-tools (12:2.10.0+xivo.15.11~20150609.191609.1fe477a7-wheezy-2) xivo-dev; urgency=low
+
+  * Rebuild package.
+
+ -- Etienne Lessard <elessard@avencall.com>  Thu, 11 Jun 2015 08:29:24 -0400
+
 dahdi-tools (12:2.10.0+xivo.15.11~20150609.191609.1fe477a7-wheezy-1) xivo-dev; urgency=medium
 
   * Refactor debian package
