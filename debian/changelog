@@ -1,3 +1,9 @@
+dahdi-tools (12:2.10.2+xivo.15.12~20150616.060434.f47d27f-wheezy-1) xivo-dev; urgency=medium
+
+  * Updated to version 2.10.2
+
+ -- Sylvain Boily <sboily@avencall.com>  Tue, 16 Jun 2015 09:04:44 -0400
+
 dahdi-tools (12:2.10.0+xivo.15.11~20150609.191609.1fe477a7-wheezy-3) xivo-dev; urgency=medium
 
   * Force rebuild
