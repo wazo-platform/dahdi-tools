@@ -1,3 +1,9 @@
+dahdi-tools (12:2.11.0-1~xivo2) xivo-dev; urgency=medium
+
+  * Fix rules to get real version
+
+ -- Sylvain Boily <sboily@avencall.com>  Thu, 21 Jan 2016 09:52:06 -0500
+
 dahdi-tools (12:2.11.0-1~xivo1) xivo-dev; urgency=medium
 
   * update to version 2.11.0
