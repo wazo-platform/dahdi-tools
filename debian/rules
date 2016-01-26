@@ -10,6 +10,7 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_DH_INSTALLINIT_ARGS = -- defaults 26 74
+DEB_CONFIGURE_EXTRA_FLAGS = --with-perllib=/usr/share/perl5
 
 configure/dahdi::
 	echo "MENUSELECT_UTILS=" > $(DEB_SRCDIR)/menuselect.makeopts

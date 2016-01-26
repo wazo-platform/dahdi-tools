@@ -1,3 +1,9 @@
+dahdi-tools (12:2.11.0-1~xivo3) xivo-dev; urgency=medium
+
+  * add --with-perllib to configure
+
+ -- Etienne Lessard <elessard@avencall.com>  Tue, 26 Jan 2016 10:33:01 -0500
+
 dahdi-tools (12:2.11.0-1~xivo2) xivo-dev; urgency=medium
 
   * Fix rules to get real version
