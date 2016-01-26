@@ -1,3 +1,4 @@
 # see: dh_installdeb(1)
 
 rm_conffile /etc/dahdi/modules 12:2.10.0+xivo.14.17~
+rm_conffile /etc/hotplug/usb/xpp_fxloader.usermap 12:2.11.0-1~xivo3~
