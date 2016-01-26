@@ -15,6 +15,8 @@ DEB_CONFIGURE_EXTRA_FLAGS = --with-perllib=/usr/share/perl5
 binary-install/dahdi::
 	cp $(DEB_SRCDIR)/init.conf.sample $(CURDIR)/debian/$(cdbs_curpkg)/etc/dahdi/init.conf
 	cp $(DEB_SRCDIR)/blacklist.sample $(CURDIR)/debian/$(cdbs_curpkg)/etc/modprobe.d/dahdi.blacklist.conf
+	rm $(CURDIR)/debian/$(cdbs_curpkg)/etc/dahdi/modules.sample
+	rm $(CURDIR)/debian/$(cdbs_curpkg)/etc/dahdi/system.conf.sample
 	find $(CURDIR)/debian/$(cdbs_curpkg)/etc -type f -exec chmod a-x {} \;
 	#
 	cp $(DEB_SRCDIR)/dahdi.init $(CURDIR)/debian/$(cdbs_curpkg).dahdi.init
