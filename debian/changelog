@@ -1,4 +1,4 @@
-dahdi-tools (12:2.11.0-1~xivo3) xivo-dev; urgency=medium
+dahdi-tools (12:2.11.0-1~xivo4) xivo-dev; urgency=medium
 
   * add --with-perllib to configure
 
