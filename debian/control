@@ -1,8 +1,8 @@
 Source: dahdi-tools
 Section: comm
 Priority: optional
-Maintainer: XiVO Dev Team <dev@avencall.com>
-Uploaders: XiVO Builder Team <release@xivo.fr>
+Maintainer: XiVO Dev Team <dev+pkg@proformatique.com>
+Uploaders: XiVO Builder Team <release@xivo.io>
 Build-Depends: autotools-dev, debhelper (>= 5), quilt, patchutils (>= 0.2.25), cdbs (>= 0.4.27-1), dahdi-linux-dev (>= 2.0.0), libnewt-dev, libusb-dev, asciidoc
 Standards-Version: 3.7.2
 Homepage: http://www.asterisk.org/
