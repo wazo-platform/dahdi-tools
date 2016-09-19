@@ -1,3 +1,9 @@
+dahdi-tools (12:2.11.1-1~xivo2) xivo-dev; urgency=medium
+
+  * bump version
+
+ -- Etienne Lessard <elessard@proformatique.com>  Mon, 19 Sep 2016 11:58:19 -0400
+
 dahdi-tools (12:2.11.1-1~xivo1) xivo-dev; urgency=medium
 
   * update to version 2.11.1
