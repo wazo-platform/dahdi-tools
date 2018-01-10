@@ -1,3 +1,9 @@
+dahdi-tools (12:2.11.1-1~xivo6) wazo-dev-stretch; urgency=medium
+
+  * add missing pkg-config build-depend
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Wed, 10 Jan 2018 10:15:49 -0500
+
 dahdi-tools (12:2.11.1-1~xivo5) wazo-dev-stretch; urgency=medium
 
   * update to stretch
