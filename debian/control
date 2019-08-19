@@ -8,7 +8,7 @@ Standards-Version: 3.9.6
 Package: dahdi
 Section: comm
 Architecture: any
-Depends: ${shlibs:Depends}, procps, fxload, perl (>= 5.6.0-16), dahdi-linux (>= 2.9.0)
+Depends: ${shlibs:Depends}, procps, fxload, perl (>= 5.6.0-16), dahdi-linux (>= 3.0.0)
 Conflicts: zaptel, dahdi-tools
 Replaces: zaptel, dahdi-tools
 Description: zapata telephony utilities
