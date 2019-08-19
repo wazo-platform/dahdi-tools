@@ -1,0 +1,16 @@
+Index: dahdi-tools-3.0.0/xpp/xtalk/xusb_libusb.c
+===================================================================
+--- dahdi-tools-3.0.0.orig/xpp/xtalk/xusb_libusb.c
++++ dahdi-tools-3.0.0/xpp/xtalk/xusb_libusb.c
+@@ -497,8 +497,11 @@ struct xusb_device *xusb_find_bypath(con
+ 				dev->filename,
+ 				dev_desc->idVendor,
+ 				dev_desc->idProduct);
++#pragma GCC diagnostic push
++#pragma GCC diagnostic ignored "-Wformat-truncation"
+ 			snprintf(devpath_tail, PATH_MAX, "%3s/%3s",
+ 				dev->bus->dirname, dev->filename);
++#pragma GCC diagnostic pop
+ 			if (!match_devpath(path, devpath_tail))
+ 				continue;
+ 			DBG("Found: usb:%s/%s: ID=%04X:%04X\n",
