@@ -3,14 +3,26 @@
 
 PKG  = $(word 2,$(shell dpkg-parsechangelog | grep Source))
 VER ?= $(shell dpkg-parsechangelog | grep Version: | awk -F':' '{print $$NF}' | sed -e 's/-.*//')
-ORIG_VER = 2.11.1
+ORIG_VER = 3.0.0
 URL_DOWNLOAD = "http://downloads.digium.com/pub/telephony/dahdi-tools/releases/dahdi-tools-${ORIG_VER}.tar.gz"
 
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 
+# ./configure is not shipped in the archive, do same step as ./bootstrap.sh
+DEB_AUTO_UPDATE_AUTOCONF = 2.69
+DEB_AUTO_UPDATE_AUTOMAKE = 1.15
+DEB_AUTO_UPDATE_AUTOHEADER = $(DEB_AUTO_UPDATE_AUTOCONF)
+DEB_AUTO_UPDATE_ACLOCAL = $(DEB_AUTO_UPDATE_AUTOMAKE)
+DEB_AUTO_UPDATE_LIBTOOL = pre
+DEB_AUTOMAKE_ARGS = --add-missing --copy
+
 DEB_DH_INSTALLINIT_ARGS = -- defaults 26 74
 DEB_CONFIGURE_EXTRA_FLAGS = --with-perllib=/usr/share/perl5
+
+
+pre-build::
+	mkdir -p auxdir
 
 binary-install/dahdi::
 	cp $(DEB_SRCDIR)/init.conf.sample $(CURDIR)/debian/$(cdbs_curpkg)/etc/dahdi/init.conf
@@ -30,7 +42,8 @@ binary-install/dahdi::
 	rm $(CURDIR)/debian/$(cdbs_curpkg).dahdi.init
 
 clean::
-	rm -f *.cdbs-config_list
+	rm -rf *.cdbs-config_list aclocal.m4 autoconfig.h.in auxdir configure m4
+	find -name Makefile.in -delete
 
 .PHONY: get-orig-source
 

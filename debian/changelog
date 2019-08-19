@@ -1,3 +1,9 @@
+dahdi-tools (12:3.0.0-1~wazo1) wazo-dev-stretch; urgency=medium
+
+  * Update to version 3.0.0
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Mon, 19 Aug 2019 11:23:18 +0200
+
 dahdi-tools (12:2.11.1-1~xivo6) wazo-dev-stretch; urgency=medium
 
   * add missing pkg-config build-depend
