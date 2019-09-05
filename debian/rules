@@ -11,7 +11,7 @@ include /usr/share/cdbs/1/class/autotools.mk
 
 # ./configure is not shipped in the archive, do same step as ./bootstrap.sh
 DEB_AUTO_UPDATE_AUTOCONF = 2.69
-DEB_AUTO_UPDATE_AUTOMAKE = 1.15
+DEB_AUTO_UPDATE_AUTOMAKE = 1.16
 DEB_AUTO_UPDATE_AUTOHEADER = $(DEB_AUTO_UPDATE_AUTOCONF)
 DEB_AUTO_UPDATE_ACLOCAL = $(DEB_AUTO_UPDATE_AUTOMAKE)
 DEB_AUTO_UPDATE_LIBTOOL = pre
