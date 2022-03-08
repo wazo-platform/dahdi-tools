@@ -1,3 +1,9 @@
+dahdi-tools (12:3.0.0-1~wazo2) wazo-dev-buster; urgency=medium
+
+  * add zuul CI
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Mon, 07 Mar 2022 07:45:39 -0500
+
 dahdi-tools (12:3.0.0-1~wazo1) wazo-dev-stretch; urgency=medium
 
   * Update to version 3.0.0

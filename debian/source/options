@@ -1,1 +1,1 @@
-extend-diff-ignore = "(^|/)(\.gitignore|README.md)$"
+extend-diff-ignore = "(^|/)(\.gitignore|README.md|zuul.yaml)$"
