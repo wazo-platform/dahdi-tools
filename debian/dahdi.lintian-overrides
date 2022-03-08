@@ -1,0 +1,2 @@
+dahdi: udev-rule-in-etc etc/udev/rules.d/dahdi.rules
+dahdi: udev-rule-in-etc etc/udev/rules.d/xpp.rules
